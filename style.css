@@ -38,6 +38,7 @@ body {
   border-radius: 6px;
   border: none;
   font-size: 15px;
+  cursor: pointer;
 }
 
 #clear {
@@ -46,6 +47,7 @@ body {
   border-radius: 6px;
   border: none;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .predictionBar {
