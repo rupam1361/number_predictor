@@ -63,7 +63,8 @@ body {
   body {
     margin: 0;
     padding: 0;
-    margin-left: 10px;
+    width: 100%;
+    display: block;
     font-family: "Roboto";
   }
 
