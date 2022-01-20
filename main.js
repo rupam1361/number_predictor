@@ -35,7 +35,7 @@ function start(event) {
 
 function stop() {
   c.removeEventListener("mousemove", draw);
-  c.removeEventListener("touchmove", draw);
+  c.removeEventListener("touchmove", drawTouch, { passive: false });
 }
 
 async function loadModel() {
@@ -139,6 +139,7 @@ function draw(event) {
 }
 
 function drawTouch(event) {
+  event.preventDefault();
   console.log(event);
   ctx.beginPath();
   ctx.lineWidth = 16;

@@ -31,12 +31,22 @@ body {
   margin-bottom: 6px;
   position: relative;
 }
-/* 
-#example {
-  height: 50px;
-  width: 300px;
-  border: 1px solid grey;
-} */
+
+#predict {
+  padding: 10px;
+  background-color: burlywood;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+}
+
+#clear {
+  padding: 10px;
+  background-color: cornflowerblue;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+}
 
 .predictionBar {
   height: 0;
@@ -45,4 +55,17 @@ body {
   position: absolute;
   bottom: 0;
   /* background-color: brown; */
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    font-family: "Roboto";
+  }
+
+  #playground {
+    margin-left: 0;
+  }
 }
