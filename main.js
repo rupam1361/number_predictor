@@ -19,10 +19,18 @@ function reposition(event) {
   coord.y = event.clientY - c.offsetTop;
 }
 
+function repositionTouch(event) {
+  console.log(c);
+  coord.x = event.changedTouches[0].clientX - c.offsetLeft;
+  coord.y = event.changedTouches[0].clientY - c.offsetTop;
+}
+
 function start(event) {
+  console.log("lol");
   c.addEventListener("mousemove", draw);
-  c.addEventListener("touchmove", draw);
+  c.addEventListener("touchmove", drawTouch);
   reposition(event);
+  repositionTouch(event);
 }
 
 function stop() {
@@ -115,13 +123,29 @@ async function gotResults() {
   predictResultsArr[maxIndex].style.height = "200px";
 }
 
-function draw() {
+function draw(event) {
+  console.log(event);
   ctx.beginPath();
   ctx.lineWidth = 16;
   ctx.lineCap = "round";
   ctx.strokeStyle = "rgb(255, 255, 255)";
   ctx.moveTo(coord.x, coord.y);
   reposition(event);
+  ctx.lineTo(coord.x, coord.y);
+  ctx.closePath();
+  ctx.stroke();
+
+  // gotResults();
+}
+
+function drawTouch(event) {
+  console.log(event);
+  ctx.beginPath();
+  ctx.lineWidth = 16;
+  ctx.lineCap = "round";
+  ctx.strokeStyle = "rgb(255, 255, 255)";
+  ctx.moveTo(coord.x, coord.y);
+  repositionTouch(event);
   ctx.lineTo(coord.x, coord.y);
   ctx.closePath();
   ctx.stroke();
