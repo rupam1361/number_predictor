@@ -87,6 +87,12 @@ body {
     margin: 0 auto;
   }
 
+  #flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   #playground {
     margin-left: 0;
   }
