@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;
+  font-family: "Roboto";
+}
+
+#playground {
+  margin-left: 40px;
+}
+
+#canvas {
+  border-radius: 10px;
+}
+
+#results {
+  display: flex;
+}
+
+.numbersList {
+  margin: 10px 14px;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+
+.predictionBarWrapper {
+  height: 200px;
+  width: 30px;
+  border: 1px solid rgb(200, 200, 200);
+  margin-bottom: 6px;
+  position: relative;
+}
+/* 
+#example {
+  height: 50px;
+  width: 300px;
+  border: 1px solid grey;
+} */
+
+.predictionBar {
+  height: 0;
+  width: 30px;
+  transition-duration: 0.3s;
+  position: absolute;
+  bottom: 0;
+  /* background-color: brown; */
+}
