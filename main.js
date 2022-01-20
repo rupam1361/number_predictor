@@ -26,7 +26,7 @@ function stop() {
 }
 
 async function loadModel() {
-  model = undefined;
+  // model = undefined;
   model = await tf.loadLayersModel("models/model.json");
 }
 
