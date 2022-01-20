@@ -93,7 +93,7 @@ predict.addEventListener("click", () => {
   if (model !== undefined) {
     gotResults();
   } else {
-    alert("Loading model...");
+    alert("Loading model... Please wait for 4 to 5 secs..");
   }
 });
 
