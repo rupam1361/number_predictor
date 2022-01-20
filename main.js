@@ -92,6 +92,8 @@ const predictResultsArr = document.getElementsByClassName("predictionBar");
 predict.addEventListener("click", () => {
   if (model !== undefined) {
     gotResults();
+  } else {
+    alert("Loading model...");
   }
 });
 
