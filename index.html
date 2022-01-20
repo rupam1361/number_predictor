@@ -7,18 +7,20 @@
     <title>Document</title>
   </head>
   <body>
-    <h3>Draw a number from 0 - 9 and predict</h3>
+    <h3 id="title">Draw a number from 0 - 9 and predict</h3>
     <div id="playground">
       <canvas id="canvas" height="240" width="300"></canvas>
       <br />
       <br />
-      <button id="predict">Predict</button>
-      <button id="clear">Clear</button>
+      <div id="flex">
+        <button id="predict">Predict</button>
+        <button id="clear">Clear</button>
+      </div>
     </div>
     <!-- <div id="example">
       <div id="myBar"></div>
     </div> -->
-    <h3>Results</h3>
+    <h3 id="resultTitle">Results</h3>
     <div id="results"></div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>

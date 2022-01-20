@@ -1,8 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  margin-left: 20px;
+  margin-left: 40px;
   font-family: "Roboto";
+}
+
+#title {
+  margin-left: 36px;
 }
 
 #playground {
@@ -15,6 +19,17 @@ body {
 
 #results {
   display: flex;
+}
+
+#flex {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+#resultTitle {
+  text-align: center;
+  width: 360px;
 }
 
 .numbersList {
@@ -67,7 +82,20 @@ body {
     font-family: "Roboto";
   }
 
+  #canvas {
+    display: block;
+    margin: 0 auto;
+  }
+
   #playground {
+    margin-left: 0;
+  }
+
+  #title {
+    margin-left: 0;
+  }
+
+  #resultTitle {
     margin-left: 0;
   }
 }
