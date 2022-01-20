@@ -105,4 +105,8 @@ body {
   #resultTitle {
     margin: 20px;
   }
+
+  #results {
+    margin: 20px;
+  }
 }
