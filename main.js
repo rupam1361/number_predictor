@@ -11,6 +11,9 @@ let coord = { x: 0, y: 0 };
 c.addEventListener("mousedown", start);
 c.addEventListener("mouseup", stop);
 
+c.addEventListener("touchstart", start);
+c.addEventListener("touchend", stop);
+
 function reposition(event) {
   coord.x = event.clientX - c.offsetLeft;
   coord.y = event.clientY - c.offsetTop;
@@ -18,11 +21,13 @@ function reposition(event) {
 
 function start(event) {
   c.addEventListener("mousemove", draw);
+  c.addEventListener("touchmove", draw);
   reposition(event);
 }
 
 function stop() {
   c.removeEventListener("mousemove", draw);
+  c.removeEventListener("touchmove", draw);
 }
 
 async function loadModel() {
