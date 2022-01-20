@@ -76,7 +76,11 @@ function preProcessCanvas(image) {
 
 const predictResultsArr = document.getElementsByClassName("predictionBar");
 
-predict.addEventListener("click", gotResults);
+predict.addEventListener("click", () => {
+  if (model !== undefined) {
+    gotResults();
+  }
+});
 
 async function gotResults() {
   for (let i = 0; i < numbers.length; i++) {
