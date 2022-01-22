@@ -134,10 +134,7 @@ function draw(event) {
   ctx.moveTo(coord.x, coord.y);
   reposition(event);
   ctx.lineTo(coord.x, coord.y);
-  ctx.closePath();
   ctx.stroke();
-
-  // gotResults();
 }
 
 function drawTouch(event) {
@@ -150,10 +147,7 @@ function drawTouch(event) {
   ctx.moveTo(coord.x, coord.y);
   repositionTouch(event);
   ctx.lineTo(coord.x, coord.y);
-  ctx.closePath();
   ctx.stroke();
-
-  // gotResults();
 }
 
 clear.addEventListener("click", () => {
